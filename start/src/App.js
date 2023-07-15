@@ -1,21 +1,34 @@
 import React from 'react';
-import {Text, StyleSheet, View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 
-import Primeiro from './components/Primeiro';
-import {Comp2, Comp3} from './components/Multi';
-import MinMax from './components/MinMax';
-import Aleatorio from './components/Aleatorio';
+import Pai from './components/direta/Pai';
+// import Contador from './components/Contador';
+// import Primeiro from './components/Primeiro';
+// import { Comp2, Comp3 } from './components/Multi';
+// import MinMax from './components/MinMax';
+// import Aleatorio from './components/Aleatorio';
+
+// import Botao from './components/Botao';
+// import Title from './components/Titulo';
 
 export default function App() {
   return (
     <View style={style.App}>
+      <Pai />
+      {/*
+      <Contador inicial={3} passo={13} />
       <Text>Text que está no App.js</Text>
       <Primeiro />
+      <Title
+        title="Cadastro de Produtos"
+        subtitle="cadastre seus produtos aqui"
+      />
+      <Botao />
       <Aleatorio min={34} max={788} />
       <MinMax min="3" max="6" />
       <MinMax min="38" max="65" />
       <Comp3 />
-      <Comp2 />
+      <Comp2 /> */}
     </View>
   );
 }
