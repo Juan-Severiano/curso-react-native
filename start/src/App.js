@@ -1,7 +1,8 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 
-import ListOfProducts from './components/products/ListOfProducts';
+import ListOfProductsV2 from './components/products/ListOfProductsV2';
+// import ListOfProducts from './components/products/ListOfProducts';
 
 // import UserLogin from './components/UserLogin';
 // import Pai from './components/direta/Pai';
@@ -18,7 +19,7 @@ import ListOfProducts from './components/products/ListOfProducts';
 export default function App() {
   return (
     <View style={style.App}>
-      <ListOfProducts />
+      <ListOfProductsV2 />
       {/*
       <UserLogin user={{ name: 'juan', email: 'juan@gmail.com' }} />
       <Contador inicial={3} passo={13} />
