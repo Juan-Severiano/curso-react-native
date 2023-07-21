@@ -3,8 +3,10 @@ import { StyleSheet, View } from 'react-native';
 
 // import ListOfProductsV2 from './components/products/ListOfProductsV2';
 // import ListOfProducts from './components/products/ListOfProducts';
-import InputName from './components/InputName';
-
+// import InputName from './components/InputName';
+// import Quadrado from './components/layout/Quadrado';
+// import FlexBoxE1 from './components/layout/FlexBoxE1';
+import FlexBoxE2 from './components/layout/FlexBoxE2';
 // import UserLogin from './components/UserLogin';
 // import Pai from './components/direta/Pai';
 // import ContadorV2 from './components/contador/ContadorV2';
@@ -20,8 +22,10 @@ import InputName from './components/InputName';
 export default function App() {
   return (
     <View style={style.App}>
-      <InputName />
+      <FlexBoxE2 />
       {/*
+      <FlexBoxE1 />
+      <InputName />
       <UserLogin user={{ name: 'juan', email: 'juan@gmail.com' }} />
       <ListOfProductsV2 />
       <Contador inicial={3} passo={13} />
