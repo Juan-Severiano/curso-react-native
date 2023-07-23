@@ -6,7 +6,7 @@ import { StyleSheet, View } from 'react-native';
 // import InputName from './components/InputName';
 // import Quadrado from './components/layout/Quadrado';
 // import FlexBoxE1 from './components/layout/FlexBoxE1';
-import FlexBoxE2 from './components/layout/FlexBoxE2';
+// import FlexBoxE2 from './components/layout/FlexBoxE2';
 // import UserLogin from './components/UserLogin';
 // import Pai from './components/direta/Pai';
 // import ContadorV2 from './components/contador/ContadorV2';
@@ -15,15 +15,16 @@ import FlexBoxE2 from './components/layout/FlexBoxE2';
 // import { Comp2, Comp3 } from './components/Multi';
 // import MinMax from './components/MinMax';
 // import Aleatorio from './components/Aleatorio';
-
+import Mega from './components/mega/Mega';
 // import Botao from './components/Botao';
 // import Title from './components/Titulo';
 
 export default function App() {
   return (
     <View style={style.App}>
-      <FlexBoxE2 />
+      <Mega qtdeNumbers={12} />
       {/*
+      <FlexBoxE2 />
       <FlexBoxE1 />
       <InputName />
       <UserLogin user={{ name: 'juan', email: 'juan@gmail.com' }} />
