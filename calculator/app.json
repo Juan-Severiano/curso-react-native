@@ -1,4 +1,11 @@
 {
-  "name": "test2",
-  "displayName": "test2"
+  "name": "calculator",
+  "displayName": "calculator",
+  "expo": {
+    "extra": {
+      "eas": {
+        "projectId": "afb2c0fc-38b6-4e12-a4ec-b9e4670c0ed1"
+      }
+    }
+  }
 }
