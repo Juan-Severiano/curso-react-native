@@ -20,12 +20,19 @@ export default props => {
       </Stack.Screen>
       <Stack.Screen name='ScreenB'>
         {props => (
-          <PassoStack {...props} next="ScreenC" back>
+          <PassoStack {...props} back next="ScreenC" >
             <ScreenB />
           </PassoStack>
         )}
       </Stack.Screen>
-      <Stack.Screen name='ScreenC' component={ScreenC} />
+      <Stack.Screen name='ScreenC'>
+        {props => (
+          <PassoStack {...props} back next="ScreenC" >
+            <ScreenC />
+          </PassoStack>
+        )}
+      </Stack.Screen>
+      {/* <Stack.Screen name='ScreenC' component={ScreenC} /> */}
     </Stack.Navigator>
   )
 }
