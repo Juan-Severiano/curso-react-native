@@ -20,7 +20,7 @@ export default props => {
       </Stack.Screen>
       <Stack.Screen name='ScreenB'>
         {props => (
-          <PassoStack {...props} next="ScreenC">
+          <PassoStack {...props} next="ScreenC" back>
             <ScreenB />
           </PassoStack>
         )}
