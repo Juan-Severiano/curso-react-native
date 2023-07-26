@@ -68,6 +68,11 @@ def enableProguardInReleaseBuilds = false
  */
 def jscFlavor = 'org.webkit:android-jsc:+'
 
+project.ext.react = [
+    entryFile: "index.js",
+    enableHermes: false,
+]
+
 android {
     ndkVersion rootProject.ext.ndkVersion
 
