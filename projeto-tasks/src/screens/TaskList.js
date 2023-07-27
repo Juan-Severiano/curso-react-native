@@ -1,6 +1,9 @@
 import { SafeAreaView } from 'react-native-safe-area-context'
 import React, { Component } from 'react'
 import { View, Text, ImageBackground, StyleSheet } from 'react-native'
+
+import commomStyles from '../commomStyles'
+
 import moment from 'moment'
 import 'moment/locale/pt-br'
 
@@ -13,7 +16,7 @@ export default class TaskList extends Component{
       <SafeAreaView style={styles.container}>
         <ImageBackground style={styles.background} source={todayImg}>
           <View style={styles.titleBar}>
-            <Text>Hoje</Text>
+            <Text style={styles.title}>Hoje</Text>
             <Text>{today}</Text>
           </View>
         </ImageBackground>
@@ -41,6 +44,6 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end'
   },
   title: {
-    
+    fontFamily: 'Lato'
   }
 })
